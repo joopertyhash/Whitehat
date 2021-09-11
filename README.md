@@ -1,6 +1,6 @@
 # Whitehat Rescue Simulator
 
-This repo provides a full simulated whitehat rescue experience. Anyone who can read JS/TS can pick through this repo and learn how it all works, from attack to recovery.
+This repo provides a full simulated whitehat rescue experience on Ethereum. Anyone who can read JS/TS can pick through this repo and learn how it all works, from attack to recovery.
 
 ## Contents
 
