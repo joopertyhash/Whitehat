@@ -4,8 +4,6 @@ This repo provides a full simulated whitehat rescue experience on Ethereum. Anyo
 
 ## Contents
 
-Assume the attacker always has the private key.
-
 ### Staking Platform, Recoverable Assets
 
 - An ERC20 is staked in a staking platform

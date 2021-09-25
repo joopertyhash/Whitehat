@@ -113,8 +113,6 @@ async function main() {
     console.log(unstakeBorkRes && "\nUnstaked 1000 BORK from Victim account.\n");
 
     await logBalances();
-
-
 }
 
 main()
