@@ -36,6 +36,11 @@ contract StakingToken is ERC20, Ownable {
         _mint(_owner, _supply);
     }
 
+    // Mint 1000 tokens to sender (for testing).
+    function getSomeTokens() public {
+        _mint(msg.sender, 1000000000000000000000);
+    }
+
     // ---------- STAKES ----------
 
     /**
@@ -115,7 +120,7 @@ contract StakingToken is ERC20, Ownable {
      * @param _stakeholder The stakeholder to add.
      */
     function addStakeholder(address _stakeholder)
-        public
+        private
     {
         (bool _isStakeholder, ) = isStakeholder(_stakeholder);
         if(!_isStakeholder) stakeholders.push(_stakeholder);
@@ -126,7 +131,7 @@ contract StakingToken is ERC20, Ownable {
      * @param _stakeholder The stakeholder to remove.
      */
     function removeStakeholder(address _stakeholder)
-        public
+        private
     {
         (bool _isStakeholder, uint256 s) = isStakeholder(_stakeholder);
         if(_isStakeholder){
